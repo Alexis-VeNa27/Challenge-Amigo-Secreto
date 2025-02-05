@@ -1,6 +1,6 @@
 let amigos = [];
 
-/* Agregar amigo al array */
+/* Agregar amigo al array y actualizar lista */
 function agregarAmigo() {
     const nombreAmigo = document.getElementById("amigo").value.trim();  
 
@@ -17,5 +17,17 @@ function agregarAmigo() {
     amigos.push(nombreAmigo);
     document.getElementById("amigo").value = "";  
     
-    console.log(amigos);
+    actualizarLista();    
+}
+
+/* Actualizar lista en pantalla */
+function actualizarLista() {
+    const listaDeAmigos = document.getElementById("listaAmigos");
+    listaDeAmigos.innerHTML = "";  
+
+    amigos.forEach(amigo => {
+        const li = document.createElement("li");
+        li.textContent = amigo;
+        listaDeAmigos.appendChild(li);
+    });
 }
