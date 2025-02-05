@@ -38,10 +38,6 @@ Este proyecto es una aplicación web que permite agregar nombres de amigos a una
 git clone https://github.com/Alexis-VeNa27/Challenge-Amigo-Secreto.git
 ```
 2. **Abrir el archivo `index.html` en el navegador**
-3. **En este enlace puedes utilizar la aplicación**
-```bash
-https://alexis-vena27.github.io/Challenge-Amigo-Secreto
-```
 
 ## 📷 Vista previa
 📌 *Imagen de muestra![imagen](https://github.com/user-attachments/assets/6eb1ca2e-58b3-4e4a-bb54-d0129db7e78f)*
