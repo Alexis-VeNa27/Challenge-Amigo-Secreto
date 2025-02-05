@@ -31,3 +31,14 @@ function actualizarLista() {
         listaDeAmigos.appendChild(li);
     });
 }
+
+/* Sortear un amigo aleatorio */
+function sortearAmigo() {
+    if (amigos.length === 0) {
+        alert("No hay amigos en la lista para sortear.");
+        return;
+    }
+
+    const indiceAleatorio = Math.floor(Math.random() * amigos.length);
+    document.getElementById("resultado").innerHTML = `🎉 Amigo seleccionado: <strong>${amigos[indiceAleatorio]}</strong> 🎉`;
+}
